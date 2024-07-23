@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/error"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/spacing_10">
+
+    <View
+        android:layout_width="@dimen/spacing_8"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/tv_message_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/spacing_6"
+        android:text="Ops, you are offline."
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_small" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/button_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_overlay"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="@dimen/spacing_8"
+        android:paddingVertical="@dimen/spacing_6"
+        android:text="@string/RETRY"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

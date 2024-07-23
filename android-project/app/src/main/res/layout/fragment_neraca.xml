@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    android:orientation="vertical">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/spacing_16">
+
+
+            <!--header total payment layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/spacing_20"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/spacing_15">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/layout_add_tanggal_mulai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_large">
+
+                            <RelativeLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@color/grey_10"
+                                    app:srcCompat="@drawable/shape_circle" />
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:rotation="180"
+                                    android:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/baseline_date_range_24" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="0dp" />
+
+                            <TextView
+                                android:id="@+id/txt_tanggal_mulai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TGL.Mulai"
+                                android:textSize="@dimen/spacing_14"
+                                android:textColor="@color/indigo_900"
+                                app:fontFamily="sans-serif-medium" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="@dimen/spacing_small"
+                        android:layout_height="0dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/layout_add_tanggal_selesai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_large">
+
+                            <RelativeLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@color/grey_10"
+                                    app:srcCompat="@drawable/shape_circle" />
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/baseline_date_range_24" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="0dp" />
+
+                            <TextView
+                                android:id="@+id/txt_tanggal_selesai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TGL.Selesai"
+
+                                android:textSize="@dimen/spacing_14"
+                                android:textColor="@color/indigo_900"
+                                app:fontFamily="sans-serif-medium" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aset Lancar"
+                    android:textColor="@color/textIconPrimary"
+                    android:textSize="@dimen/txt_mlarge"
+                    app:fontFamily="@font/custom_font_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Kas"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_lancar_kas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Bank"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_lancar_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Piutang Usaha"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_lancar_piutang_usaha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Persediaan barang dagang"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_lancar_persediaan_barang_dagang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Uang muka biaya"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_lancar_uang_muka_biaya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aset Tetap"
+                        android:textColor="@color/textIconPrimary"
+                        android:textSize="@dimen/txt_mlarge"
+                        android:layout_marginTop="@dimen/spacing_10"
+                        app:fontFamily="@font/custom_font_medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Tanah"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_tetap_tanah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Bangunan"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_tetap_bangunan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/red_A700"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Akumulasi penyusutan bangunan"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_tetap_akumulasi_penyusutan_bangunan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Peralatan"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_tetap_peralatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Akumulasi penyusutan peralatan"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_aset_tetap_akumulasi_penyusutan_peralatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/red_A700"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Aset"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_mlarge"
+                            android:layout_marginTop="@dimen/spacing_10"
+                            app:fontFamily="@font/custom_font_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_total_aset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_mlarge" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text=""
+                            android:textColor="@color/textIconPrimary" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/spacing_10"
+                            android:layout_marginBottom="@dimen/spacing_10"
+                            android:background="@color/softBg" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kewajiban"
+                        android:textColor="@color/textIconPrimary"
+                        android:textSize="@dimen/txt_mlarge"
+                        android:layout_marginTop="@dimen/spacing_10"
+                        app:fontFamily="@font/custom_font_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Beban yang harus dibayar"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_kewajiban_beban_yang_harus_dibayar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Hutang Pajak"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_kewajiban_hutang_pajak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Hutang Usaha"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_kewajiban_hutang_usaha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Hutang Bank"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_kewajiban_hutang_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/spacing_10"
+                            android:layout_marginBottom="@dimen/spacing_10"
+                            android:background="@color/softBg" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Modal"
+                        android:textColor="@color/textIconPrimary"
+                        android:textSize="@dimen/txt_mlarge"
+                        android:layout_marginTop="@dimen/spacing_10"
+                        app:fontFamily="@font/custom_font_medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Modal Pemilik"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_modal_pemilik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Laba Berjalan"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_modal_laba_berjalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_medium" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Kewajiban dan Modal"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_mlarge"
+                            android:layout_marginTop="@dimen/spacing_10"
+                            app:fontFamily="@font/custom_font_medium" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/txt_modal_total_kewajiban_modal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/custom_font"
+                            android:text="0"
+                            android:textColor="@color/textIconPrimary"
+                            android:textSize="@dimen/txt_mlarge" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

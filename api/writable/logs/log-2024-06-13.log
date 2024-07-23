@@ -1,0 +1,52 @@
+CRITICAL - 2024-06-13 06:52:15 --> TypeError: Unsupported operand types: string + string
+[Method: POST, Route: api/user/update-manajemen-stok]
+in APPPATH/Controllers/ApiController.php on line 686.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateManajemenStok()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/roriksetyabudi/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')
+CRITICAL - 2024-06-13 06:52:31 --> TypeError: Unsupported operand types: string + string
+[Method: POST, Route: api/user/update-manajemen-stok]
+in APPPATH/Controllers/ApiController.php on line 686.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateManajemenStok()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/roriksetyabudi/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')
+CRITICAL - 2024-06-13 06:53:45 --> TypeError: Unsupported operand types: string + string
+[Method: POST, Route: api/user/update-manajemen-stok]
+in APPPATH/Controllers/ApiController.php on line 683.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->updateManajemenStok()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/roriksetyabudi/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')
+CRITICAL - 2024-06-13 15:34:58 --> App\Exception\ValidationException: Trying to access array offset on null
+[Method: GET, Route: api/dashboard]
+in APPPATH/Service/DashboardService.php on line 50.
+ 1 APPPATH/Controllers/ApiController.php(292): App\Service\DashboardService->show()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->show_dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/roriksetyabudi/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')
+CRITICAL - 2024-06-13 15:35:01 --> App\Exception\ValidationException: Trying to access array offset on null
+[Method: GET, Route: api/dashboard]
+in APPPATH/Service/DashboardService.php on line 50.
+ 1 APPPATH/Controllers/ApiController.php(292): App\Service\DashboardService->show()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->show_dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/roriksetyabudi/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')

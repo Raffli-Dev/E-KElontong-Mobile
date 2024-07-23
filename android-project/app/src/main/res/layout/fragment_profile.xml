@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardClearBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/nav_header_imageView"
+                android:layout_width="@dimen/spacing_56"
+                android:layout_height="@dimen/spacing_56"
+                android:layout_marginBottom="@dimen/spacing_10"
+                android:src="@drawable/ic_logo_eklontong"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_medium"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_24"
+            android:layout_marginVertical="@dimen/spacing_12"
+            android:background="@color/softBg" />
+        <LinearLayout
+            android:id="@+id/action_edit_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_overlay"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_24"
+            android:paddingVertical="@dimen/spacing_14">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_24"
+                android:layout_height="@dimen/spacing_24"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:src="@drawable/baseline_edit_24"
+                app:tint="@color/textIconSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profil"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_small"
+                app:fontFamily="@font/custom_font_medium" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_2"
+                android:text=""
+                android:textColor="@color/textIconSecondary"
+                android:textSize="@dimen/txt_medium"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/action_edit_usaha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_overlay"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_24"
+            android:paddingVertical="@dimen/spacing_14">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_24"
+                android:layout_height="@dimen/spacing_24"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:src="@drawable/baseline_edit_24"
+                app:tint="@color/textIconSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Usaha"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_small"
+                app:fontFamily="@font/custom_font_medium" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_2"
+                android:text=""
+                android:textColor="@color/textIconSecondary"
+                android:textSize="@dimen/txt_medium"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_24"
+            android:layout_marginVertical="@dimen/spacing_12"
+            android:background="@color/softBg" />
+
+        <LinearLayout
+            android:id="@+id/action_shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_overlay"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_24"
+            android:paddingVertical="@dimen/spacing_14">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_24"
+                android:layout_height="@dimen/spacing_24"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:src="@drawable/ic_cart"
+                app:tint="@color/textIconSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nav_shopping_cart"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_small"
+                app:fontFamily="@font/custom_font_medium" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_2"
+                android:text=""
+                android:textColor="@color/textIconSecondary"
+                android:textSize="@dimen/txt_medium"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/action_history_penjualan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_overlay"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_24"
+            android:paddingVertical="@dimen/spacing_14">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_24"
+                android:layout_height="@dimen/spacing_24"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:src="@drawable/ic_history"
+                app:tint="@color/textIconSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Penjualan"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_small"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/action_history_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_overlay"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_24"
+            android:paddingVertical="@dimen/spacing_14">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_24"
+                android:layout_height="@dimen/spacing_24"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:src="@drawable/ic_history"
+                app:tint="@color/textIconSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pengeluaran"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_small"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/action_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_overlay"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_24"
+            android:paddingVertical="@dimen/spacing_14">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_24"
+                android:layout_height="@dimen/spacing_24"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:src="@drawable/ic_baseline_logout"
+                app:tint="@color/textIconSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@color/textIconPrimary"
+                android:textSize="@dimen/txt_small"
+                app:fontFamily="@font/custom_font_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_20"
+            android:layout_marginVertical="@dimen/spacing_12"
+            android:background="@color/softBg" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

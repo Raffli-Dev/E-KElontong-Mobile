@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="penambahan_pengurangan_stok">
+        <item>Penambahan (+)</item>
+        <item>Pengurangan (-)</item>
+    </string-array>
+
+</resources>

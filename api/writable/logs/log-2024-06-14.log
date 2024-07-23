@@ -1,0 +1,22 @@
+CRITICAL - 2024-06-14 09:24:20 --> App\Exception\ValidationException: 7 : Failed to connect to 192.168.134.231 port 82 after 0 ms: Couldn't connect to server
+[Method: GET, Route: api/dashboard]
+in APPPATH/Service/DashboardService.php on line 50.
+ 1 APPPATH/Controllers/ApiController.php(292): App\Service\DashboardService->show()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->show_dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/rorik/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')
+CRITICAL - 2024-06-14 09:24:25 --> App\Exception\ValidationException: 7 : Failed to connect to 192.168.134.231 port 82 after 0 ms: Couldn't connect to server
+[Method: GET, Route: api/dashboard]
+in APPPATH/Service/DashboardService.php on line 50.
+ 1 APPPATH/Controllers/ApiController.php(292): App\Service\DashboardService->show()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\ApiController->show_dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/rorik/DATA/DOCKER/php74/www/eklontong-unmer/api/public/index.php')

@@ -1,0 +1,345 @@
+<resources>
+    <string name="app_name">E-KLONTONG</string>
+
+    <string name="tagline">Your travel companion</string>
+    <string name="develop_by">develop by Dream Space</string>
+
+    <!-- Google Map API KEY -->
+    <string name="GOOGLE_MAP_API_KEY">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+
+    <!--ActivityMain string data -->
+    <string name="menu_saved">Saved</string>
+    <string name="menu_news">News &amp; Event</string>
+    <string name="menu_user">Profile</string>
+
+    <string name="type_hotels">Hotel</string>
+    <string name="type_foods">Food</string>
+    <string name="type_shopping">Shopping</string>
+    <string name="type_destinations">Destination</string>
+    <string name="type_rental">Rental &amp; Guide</string>
+    <string name="type_news">News</string>
+    <string name="type_event">Event</string>
+
+    <string name="search_hint">Search...</string>
+    <string name="title_fragment_sign_in">Sign In</string>
+    <string name="title_fragment_sign_up">Sign Up</string>
+    <string name="title_fragment_edit_profile">Edit Profile</string>
+    <string name="title_fragment_forgot">Forgot Password</string>
+    <string name="title_fragment_reset">Reset Password</string>
+
+    <!--ActivityAuth string data -->
+    <string name="sign_in_title">Welcome back to\nE-Kelontong.</string>
+    <string name="sign_in_subtitle">Sign In and continue exploring</string>
+    <string name="sign_up_title">Registrasi</string>
+    <string name="update_profile_title">Update your profile\ndata.</string>
+    <string name="sign_up_subtitle">Registrasi Untuk Menggunakan Lebih Lanjut</string>
+    <string name="forgot_title">Don’t worry !</string>
+    <string name="forgot_subtitle">Please enter the email address associated\nwith your account</string>
+    <string name="reset_title">Set Your New\nPassword !</string>
+    <string name="reset_subtitle">Please enter your email address and reset code</string>
+
+    <!--ActivityReviews string data -->
+    <string name="title_activity_reviews">Reviews</string>
+    <string name="add_review_success">Add review successfully !</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="review_hint">Describe your experience...</string>
+
+    <!--ActivityText string data -->
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_term_condition">Term &amp; condition</string>
+
+    <!--ActivityImages string data -->
+    <string name="title_activity_images">Images</string>
+    <string name="image_of">%1$d / %2$d</string>
+
+    <!--ActivityDialogNotification string data -->
+    <string name="title_activity_dialog_notification">Notification</string>
+    <string name="delete_successfully">Delete successfully</string>
+    <string name="type_notif_news">NEWS</string>
+    <string name="type_notif_topic">TOPIC</string>
+    <string name="type_notif_link">LINK</string>
+    <string name="type_notif_image">IMAGE</string>
+    <string name="type_notif_normal">NORMAL</string>
+
+    <!--ActivitySearch string data -->
+    <string name="title_activity_search">Search</string>
+    <string name="please_fill">Please Fill Search Input</string>
+    <string name="sheet_filter">Filters</string>
+    <string name="filter_type">Type</string>
+    <string name="filter_all">All</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_order">Order</string>
+    <string name="filter_new_old">New to old</string>
+    <string name="filter_old_new">Old to new</string>
+    <string name="filter_high_rating">Highest rating</string>
+    <string name="filter_low_rating">Lowest rating</string>
+    <string name="filter_most_review">Most review</string>
+    <string name="filter_less_review">Less review</string>
+
+    <!--ActivityNotification string data -->
+    <string name="title_activity_notification">Notification</string>
+    <string name="notification_channel_server">Default</string>
+    <string name="msg_notif_empty">Notification is empty</string>
+
+    <!--ActivityListingDetails string data -->
+    <string name="top_button_hour">Hour</string>
+    <string name="top_button_phone">Phone</string>
+    <string name="top_button_reviews">Reviews</string>
+    <string name="top_button_navigate">Navigate</string>
+    <string name="top_button_share">Share</string>
+
+    <string name="section_description">Description</string>
+    <string name="button_view_more">View more</string>
+    <string name="button_view_less">View less</string>
+    <string name="section_location">Location</string>
+    <string name="section_reviews">Reviews</string>
+    <string name="button_view_review">View all reviews</string>
+    <string name="section_related">Related</string>
+    <string name="more_info">More info</string>
+    <string name="more">more</string>
+    <string name="reviews">reviews</string>
+    <string name="closed">closed</string>
+    <string name="open">open</string>
+    <string name="today">today</string>
+    <string name="always_open">Always open</string>
+
+    <string name="bt_add_cart">TAMBAH KE KERANJANG</string>
+    <string name="please_wait_text">Please wait until data loaded</string>
+    <string name="remove_cart">Remove from shopping cart</string>
+    <string name="msg_out_of_stock">Ops, Product out of stock</string>
+    <string name="msg_suspend">Ops, Product is suspend</string>
+    <string name="add_cart">Add to shopping cart</string>
+    <string name="bt_remove_cart">HAPUS DARI KERANJANG</string>
+    <string name="title_activity_cart">Keranjang Belanja</string>
+    <string name="title_activity_cart_retur_sales">Keranjang Retur Penjualan</string>
+    <string name="no_item">No Item</string>
+    <color name="textIconSecondary">#ACACAC</color>
+    <string name="total_sub">Pesanan&#160;</string>
+    <string name="before_tax">( Before tax )</string>
+    <string name="CONTINUE">SELANJUTNYA</string>
+    <string name="msg_cart_empty">Shopping Cart is empty</string>
+    <string name="msg_cart_retur_sales_empty">Shopping Cart Retur Sales is empty</string>
+    <string name="cart_delete_confirm">Are you sure want to delete</string>
+    <string name="stock">Stock : &#160;</string>
+    <string name="product_order_list">Pesanan</string>
+    <string name="buyer_profile">Shipping</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_shipping">Shipping location</string>
+    <string name="cost_details">Cost</string>
+    <string name="sub_total">Subtotal :&#160;</string>
+    <string name="tax">Tax&#160;</string>
+    <string name="shipping">Shipping&#160;</string>
+    <string name="total_fess">Total :&#160;</string>
+    <string name="process_checkout">PROCESS CHECKOUT</string>
+    <string name="title_please_wait">Please Wait</string>
+    <string name="content_submit_checkout">Submit Checkout&#8230;</string>
+    <string name="content_submit_payment">Submit Pembayaran&#8230;</string>
+    <string name="content_submit_payment_retur_penjualan">Submit retur penjualan&#8230;</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_category">Categories</string>
+    <string name="menu_riwayat_penjualan">Penjualan</string>
+    <string name="menu_news_info">News Info</string>
+    <string name="menu_untung_rugi">Untung Rugi</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_neraca">Neraca</string>
+    <string name="str_nav_shopping_cart">Shopping Cart</string>
+    <string name="str_nav_wishlist">Wishlist</string>
+    <string name="str_nav_history">Order History</string>
+    <string name="str_nav_notifications">Notifications</string>
+    <string name="str_nav_instruction">Instruction</string>
+    <string name="str_nav_contact_us">Contact us</string>
+    <string name="str_nav_rate">Rate this</string>
+    <string name="str_nav_about">About</string>
+
+    <string name="confirm_payment">Apakah Anda Yakin Untuk Melakukan Pembayaran?</string>
+    <string name="confirm_payment_sales_retur">Apakah Anda Yakin Untuk Melakukan Retur Penjualan?</string>
+    <string name="failed_checkout">
+        Ups, Gagal saat pembayaran pesanan
+        \n\nPastikan Anda memiliki koneksi internet, atau jika Anda memerlukan bantuan silakan Hubungi Kami
+    </string>
+    <string name="failed_checkout_sales_retur">
+        Ups, Gagal saat retur penjualan
+        \n\nPastikan Anda memiliki koneksi internet, atau jika Anda memerlukan bantuan silakan Hubungi Kami
+    </string>
+    <string name="TRY_AGAIN">TRY AGAIN</string>
+    <string name="GOT_IT">GOT IT</string>
+    <string name="PAY_NOW">PAY NOW</string>
+    <string name="CETAK_NOTA_NOW">NOTA</string>
+    <string name="KEMBALI">KEMBALI</string>
+
+    <string name="success_checkout">Congratulation</string>
+    <string name="msg_success_checkout">
+        Successfully checkout order.\nYour order code : %1$s.
+    </string>
+    <string name="msg_success_checkout_sales_retur">
+        Successfully sales retur order.\nYour order code : %1$s.
+    </string>
+
+    <!--Days array -->
+    <string name="open_every_day">Everyday</string>
+    <string-array name="days_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="days_array_short">
+        <item>sun</item>
+        <item>mon</item>
+        <item>tue</item>
+        <item>wed</item>
+        <item>thu</item>
+        <item>fri</item>
+        <item>sat</item>
+    </string-array>
+
+    <!--ActivityIntro string data -->
+    <string name="title_activity_intro">Introduction</string>
+    <!--Size three array below must be same -->
+    <string-array name="about_title_array">
+        <item>Welcome to Traver.</item>
+        <item>Discover best places.</item>
+        <item>Enjoy your trip !!</item>
+    </string-array>
+
+    <string-array name="about_description_array">
+        <item>Traver app is multiple city travel app ready\nto companion your trip.</item>
+        <item>Explore your favorite destinations, hotels,\nfoods and shopping places</item>
+        <item>Get ready for a enjoyable\ntravel experience with traver app</item>
+    </string-array>
+
+    <integer-array name="about_images_array">
+        <item>@drawable/image_intro_1</item>
+        <item>@drawable/image_intro_2</item>
+        <item>@drawable/image_intro_3</item>
+    </integer-array>
+
+    <!--Other String -->
+    <string name="share_text" formatted="false">
+        View Location \'%1$s\'%n
+        Using app \'%2$s\'%n
+        http://play.google.com/store/apps/details?id=com.app.traver
+    </string>
+
+    <string name="share_text_news_event" formatted="false">
+        Read News Event \'%1$s\'%n
+        Using app \'%2$s\'%n
+        http://play.google.com/store/apps/details?id=com.app.traver
+    </string>
+
+    <string name="title_delete_confirm">Delete Confirmation</string>
+    <string name="content_delete_confirm">Are you sure want to delete all&#160;</string>
+    <string name="delete_success">Delete successfully</string>
+    <string name="press_again_exit_app">Press again to exit</string>
+    <string name="open_now">open</string>
+    <string name="close_now">closed</string>
+    <string name="title_info">Info</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="error_state_text">Oops !!</string>
+    <string name="empty_state_text">No item</string>
+    <string name="empty_state_text_search">Search anything</string>
+    <string name="empty_state_subtitle_search">Add filters for more accurate\nsearch result</string>
+    <string name="empty_state_retry">Tap to retry</string>
+    <string name="empty_state_no_data">There are no data\nto show</string>
+    <string name="failed_text">Something went wrong\ntap to retry</string>
+    <string name="failed_when_load">Failed when load data</string>
+    <string name="no_internet_text">No internet connection\ntap to retry</string>
+    <string name="no_internet_connection">There is something problem with your network, please check your internet setting.</string>
+    <string name="unable_connect_server">Something went wrong, unable connect to server</string>
+    <string name="logout_confirmation_text">Are you sure want to logout?</string>
+    <string name="msg_app_out_date">Aplikasi sudah kedaluwarsa, harap perbarui untuk mendapatkan versi terbaru</string>
+    <string name="msg_app_new_version">Versi baru tersedia, perbarui sekarang untuk mendapatkan fitur terbaru</string>
+    <string name="msg_no_internet">Please check your Internet connection and try again</string>
+    <string name="failed">Failed</string>
+
+    <string name="cannot_dial_number">Cannot dial number</string>
+    <string name="failed_create_share">Failed when create share data</string>
+    <string name="url_copied_clipboard">URL copied to clipboard</string>
+    <string name="url_invalid">Opss, Invalid URL</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_reset_code">Reset Code</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register_success">Register successfully !</string>
+    <string name="success">successfully !</string>
+    <string name="logout_success">Logout successfully !</string>
+    <string name="login_success">Login successfully !</string>
+    <string name="forgot_success">Reset code has been sent, please check your email</string>
+    <string name="reset_success">Reset password successful, sign in with new password</string>
+    <string name="app_version">Build Version</string>
+    <string name="version_unknown">Unknown</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="section_notifications">Notifications</string>
+    <string name="section_application">Application</string>
+    <string name="menu_push_notification">Push notification</string>
+    <string name="menu_vibrate">Vibrate</string>
+    <string name="menu_tnc">Terms &amp; condition</string>
+    <string name="menu_rate_this">Rate this app</string>
+    <string name="menu_more_app">More apps</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_intro">Introduction</string>
+    <string name="menu_about">About</string>
+    <string name="menu_logout">Logout</string>
+    <string name="google_sign_up_failed_email">sign up failed, cannot obtain email</string>
+    <string name="google_sign_up_failed">Google sign up failed</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="sign_in_with_google">Sign In with Google</string>
+    <string name="by_creating_an_account">By creating an account, you agree to our </string>
+    <string name="already_have_account">Sudah memiliki akun?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="dont_receive_reset_code">Don’t receive reset code?</string>
+    <string name="already_receive_reset_code">Already receive code?</string>
+    <string name="get_reset_code">Get Reset Code</string>
+    <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="resend">Resend</string>
+    <string name="close">Close</string>
+    <string name="apply">Apply</string>
+
+    <!-- Time Ago string data -->
+    <string name="just_now">Just now</string>
+    <string name="a_minute_ago">A minute ago</string>
+    <string name="minutes_ago">minute ago</string>
+    <string name="an_hour_ago">An hour ago</string>
+    <string name="hours_ago">Hours ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="days_ago">days ago</string>
+
+    <string name="SEE_ALL">SEE ALL</string>
+    <string name="OK">OK</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="APPLY">APPLY</string>
+    <string name="RESET">RESET</string>
+    <string name="SETTING">SETTING</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="CLOSE">CLOSE</string>
+    <string name="UPDATE">UPDATE</string>
+    <string name="DISMISS">DISMISS</string>
+    <string name="RETRY">RETRY</string>
+    <string name="FAILED">FAILED</string>
+    <string name="DELETE">DELETE</string>
+    <string name="OPEN">OPEN</string>
+    <string name="SEND">SEND</string>
+    <string name="Next">Next</string>
+    <string name="Skip">Skip</string>
+    <string name="LetsStart">Let\'s Start</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="medium_lorem_ipsum">Quisque imperdiet nunc at massa dictum volutpat. Etiam id orci ipsum. Integer id ex dignissim</string>
+</resources>

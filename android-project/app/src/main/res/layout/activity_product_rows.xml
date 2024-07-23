@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="@dimen/spacing_8"
+    android:background="@drawable/card_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/spacing_10"
+        android:background="@drawable/button_overlay"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_field"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="@dimen/spacing_10"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="RUIJIE RG-RAP2200(E)"
+                android:textColor="@color/tx_dark"
+                android:textSize="@dimen/txt_medium"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/spacing_60"
+                    android:layout_height="wrap_content"
+                    android:text="Harga Jual"
+                    android:textSize="@dimen/spacing_12"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium" />
+
+                <View
+                    android:layout_width="@dimen/spacing_12"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="@dimen/spacing_10"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="sans-serif-medium"
+                    android:textColor="@color/ic_soft"
+                    android:text=":"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_harga_jual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_marginHorizontal="@dimen/spacing_4"
+                    android:maxLines="1"
+                    android:paddingBottom="1dp"
+                    android:text="Rp. 15.000"
+                    android:textSize="@dimen/spacing_12"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="@dimen/spacing_60"
+                    android:layout_height="wrap_content"
+                    android:text="Stok"
+                    android:textSize="@dimen/spacing_12"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium" />
+
+                <View
+                    android:layout_width="@dimen/spacing_12"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="@dimen/spacing_10"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_jumlah_stok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_marginHorizontal="@dimen/spacing_4"
+                    android:maxLines="1"
+                    android:paddingBottom="1dp"
+                    android:text="5"
+                    android:textSize="@dimen/spacing_12"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/spacing_60"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori"
+                    android:textSize="@dimen/spacing_12"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium" />
+
+                <View
+                    android:layout_width="@dimen/spacing_12"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="@dimen/spacing_10"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/ic_soft"
+                    app:fontFamily="sans-serif-medium"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_kategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/badge_overlay"
+                    android:paddingHorizontal="@dimen/spacing_4"
+                    android:text="BAHAN POKOK"
+                    android:textColor="@color/ic_soft"
+                    android:textSize="@dimen/spacing_12"
+                    app:fontFamily="sans-serif-medium" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_edit_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/badge_overlay_orange"
+                    android:text="EDIT"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/spacing_14"
+                    android:padding="@dimen/spacing_4"
+                    app:fontFamily="sans-serif-medium" />
+
+                <View
+                    android:layout_width="@dimen/spacing_12"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/txt_delete_barang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/badge_overlay_danger"
+                    android:padding="@dimen/spacing_4"
+                    android:text="HAPUS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spacing_14"
+                    app:fontFamily="sans-serif-medium" />
+
+                <View
+                    android:layout_width="@dimen/spacing_12"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/txt_tambah_stok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/badge_overlay_blue"
+                    android:padding="@dimen/spacing_4"
+                    android:text="STOK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spacing_14"
+                    app:fontFamily="sans-serif-medium" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
